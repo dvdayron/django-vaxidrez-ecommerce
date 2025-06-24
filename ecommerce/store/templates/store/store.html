@@ -1,0 +1,32 @@
+{% extends 'ecommerce/layout.html' %}
+{% load static %}
+
+{% block content %}
+
+	{% include 'ecommerce/common/section_title.html' with page_title="Our Store" %}
+
+	<section class="section-content padding-y">
+
+		<div class="container">
+
+			<div class="row">
+
+				{% include 'store/partials/sidebar.html' %}
+
+				<main class="col-md-9">
+
+					{% include 'store/partials/products_total.html' %}
+
+					{% include 'store/partials/products_list.html' %}
+
+					{% include 'store/partials/products_pagination.html' %}
+
+				</main>
+
+			</div>
+
+		</div>
+
+	</section>
+
+{% endblock %}

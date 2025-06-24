@@ -1,0 +1,17 @@
+{% extends 'ecommerce/layout.html' %}
+{% load static %}
+
+{% block content %}
+
+    <section class="section-content padding-y bg">
+        <div class="container">
+
+            {% include 'store/partials/product_single_card.html' %}
+
+            {% include 'store/partials/product_reviews.html' %}
+
+        </div> <!-- container .//  -->
+    </section>
+    <!-- ========================= SECTION CONTENT END// ========================= -->
+
+{% endblock %}
