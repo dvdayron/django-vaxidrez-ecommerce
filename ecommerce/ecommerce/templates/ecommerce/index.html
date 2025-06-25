@@ -29,7 +29,7 @@
 	{% for product in products %}
 	<div class="col-md-3">
 		<div class="card card-product-grid">
-			<a href="./product-detail.html" class="img-wrap">
+			<a href="{{ product.get_url }}" class="img-wrap">
 				{% if product.image %}
 					<img src="{{ product.image.url }}">
 				{% else %}
