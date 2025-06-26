@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="item-option-select">
+        <h6>Choose Color</h6>
+
+        <select class="form-control" name="color" required>
+            <option value="" disabled selected>Select color</option>
+
+            {% for i in product.variation_set.colors %}
+            <option value="{{ i.value | lower }}">
+                {{ i.value | capfirst }}
+            </option>
+            {% endfor %}
+        </select>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="item-option-select">
+        <h6>Select Size</h6>
+
+        <select class="form-control" name="size" required>
+            <option value="" disabled selected>Select size</option>
+
+            {% for i in product.variation_set.sizes %}
+            <option value="{{ i.value | lower }}">
+                {{ i.value | capfirst }}
+            </option>
+            {% endfor %}
+        </select>
+
+    </div>
+</div>
+
+<hr>
