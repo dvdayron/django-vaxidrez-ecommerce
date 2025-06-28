@@ -144,8 +144,8 @@ MESSAGE_TAGS = {
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'dvdayron@gmail.com'
-EMAIL_HOST_PASSWORD = 'YGk3]<@s/Cv~6y2Hwhd"Mp'
+EMAIL_HOST_USER = '<your.email>'
+EMAIL_HOST_PASSWORD = '<your.pass>'
 EMAIL_USE_TLS = True
 
 # Default primary key field type
